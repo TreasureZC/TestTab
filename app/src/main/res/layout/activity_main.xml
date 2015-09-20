@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="screen">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"/>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/textview1"
+                android:layout_width="fill_parent"
+                android:layout_height="486dp"
+                android:text="Linux"
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="MAC"
+                android:textColor="#385E0F" />
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Windows"
+                android:textColor="#1E90FF" />
+        </FrameLayout>
+        <ImageView
+            android:layout_width=""
+            android:layout_height="" />
+    </RelativeLayout>
+</TabHost>
